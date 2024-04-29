@@ -64,7 +64,6 @@ function save() {
         category: document.getElementById("selectCategory").value,
         promotion: document.getElementById("checkBoxPromotion").checked,
         new: document.getElementById("checkBoxNewProduct").checked
-
     };
 
     addNewRow(prod);
@@ -110,11 +109,11 @@ function addNewRow(prod) {
     //Insert product options
     var options = "";
     if (prod.promotion) {
-        options = "<span class='badge bg-success me-1'>P</span>";
+        options = "<span class='badge bg-success me-1 d-none d-md-table-cell'>P</span>";
     }
 
     if (prod.new) {
-        options += "<span class='badge bg-primary'>L</span>";
+        options += "<span class='badge bg-primary d-none d-md-table-cell'>L</span>";
     }
 
     cell = newRow.insertCell();
