@@ -17,11 +17,76 @@
     </header>
 
     <main class="container">
-        
+
         <section>
             <div class="display-6">
                 Formulário de Cadastro:
             </div>
+
+            <div class="row">
+                <div class="col-md-10 offset-md-1">
+                    <form>
+                        <div class="row mb-3 mt-3">
+                            <label for="inputName" class="col-sm-2 col-form-label">Nome:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mt-3">
+                            <label for="inputDescription" class="col-sm-2 col-form-label">Descrição:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputDescription">
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mt-3">
+                            <label for="inputPrice" class="col-sm-2 col-form-label">Preço:</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="inputPrice">
+                            </div>
+
+                            <label for="inputCategory" class="col-sm-2 col-form-label">Categoria::</label>
+                            <div class="col-sm-4">
+                                <select class="form-select" aria-label="Selecione uma categoria" id="selectCategory">
+                                    <option selected>Escolha:</option>
+                                    <option value="1">Produção Própria</option>
+                                    <option value="2">Nacional</option>
+                                    <option value="3">Importado</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-3 mt-3">
+                            <label for="inputPrice" class="col-sm-2 col-form-label">Opções:</label>
+                            <div class="col-sm-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkBoxPromotion">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Promoção
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="checkBoxNewPromotion">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Lançamento
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-3 mt-3">
+                            <div class="col-sm-4">
+                                <button type="submit" class="btn btn-primary">Cadastrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+            </form>
+
         </section>
         <hr>
         <section>
@@ -35,7 +100,7 @@
         @Sistemas P&D
     </footer>
 
-    
+
 
 
 
